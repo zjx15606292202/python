@@ -1,0 +1,467 @@
+# words = ''' 1st line.
+# 2nd line.
+# 3rd line. '''
+#   print(words)
+# lines = 'hello\nworld\njerry'
+#   print(lines)
+# py_str = 'python'
+# len(py_str)
+# py_str[0]
+# py_str[-1]
+# py_str[2:4]
+# py_str[2:900]
+#   print(py_str)
+# if 'tom' in words:
+#     print('yes')
+# if 'tom' not in words:
+#     print('not in')
+# else:
+#     print('tom is words')
+# lines = 'hello\nworld\njerry'
+#   print(lines)
+# py_str = 'python'
+# len(py_str)
+# py_str[0]
+# py_str[-1]
+# py_str[2:4]
+# py_str[2:900]
+#   print(py_str)
+# if 'tom' in words:
+#     print('yes')
+# if 'tom' not in words:
+#     print('not in')
+# else:
+#     print('tom is words')
+# #
+#  if -0.0:
+#    print('ok')
+#  if -0.01:
+#    print('-0.01 is ok')
+#  if ' ':
+#    print('space is true')
+#  if '':
+#    print('空字符串是False')
+#  if not [];
+#     print('空列表也是false')
+# import getpass
+# username = input('username: ')
+# password = getpass.getpass('password: ')
+# if username == 'bob' and password == '123456':
+#    print("login successful")
+# else:
+#    print("login incorrect")
+# import random
+#
+# number = random.randint(1,100)
+# print('number ->', number)
+# answer = int(input('猜数(1-100):'))
+# if answer > number:
+#    print("猜大了")
+# elif answer < number:
+#    print("猜小了")
+# else:
+#    print("猜对了")
+# a = 100
+# b = 80
+# if a < b:
+#     small = a
+# else:
+#     small = b
+# small = a if a < b else b
+#!/usr/bin/env python3
+# import getpass
+# username = input('username: ')
+# password = getpass.getpass('password: ')
+# if username == 'bob' and password == '123456':
+#     print('\033[32;1mLogin successful!\033[0m')
+# else:
+#     print('\033[31;1mLogin incorrect!\033[0m')
+# words = 'Hello\nworld\ntom\njerry'
+#  lines = '''1st line.
+#  2nd line.
+#  3rd line.'''
+#  print(words)
+#  print(lines)
+#
+# if 'tom' in words:
+#     print('yes')
+#
+# if 'tom' not in words:
+#     print('not in')
+# else:
+#     print('tom in words')
+#
+# if -0.0:
+#     print('ok')        # 任何值为0的数字都是False，非0为True
+#
+# if -0.01:
+#     print('0.01 is ok')
+#
+# if ' ':                # 任何非空对象都是True，空为False
+#     print('space is true')
+#
+# if '':
+#     print('空字符串是False')
+#
+# if not []:
+#     print('空列表也是False')
+#
+# if not None:
+#     print('None也是False，表示空')
+#!/usr/bin/env python3
+#config:utf8
+# score = int(input("成绩: "))
+# if score > 60:
+#     print('及格')
+# elif score > 70:
+#     print("良")
+# elif score > 80:
+#    print("好")
+# elif score > 90:
+#    print("优秀")
+# else:
+#    print("你需要继续努力")
+
+#!/usr/bin/env python3
+#config:utf8
+# score = int(input('成绩: '))
+# if 60 <= score < 70:
+#    print("及格")
+# elif 70 <= score < 80:
+#    print("良")
+# elif 80 <= score < 90:
+#    print("优秀")
+# else:
+#   print("你要继续努力了")
+#!/usr/bin/env python3
+# import random
+# player = input("请输入石头 剪刀 布: ")
+# computer = random.choice(['石头','剪刀','布'])
+# win_list = [['石头','剪刀'],['剪刀','布'],['布','石头']]
+#
+# print("你的出拳:",player, "计算机出拳:",computer)
+# if player == computer:
+#    print('平局')
+# elif [player,computer] in win_list:
+#    print("你赢了!!")
+# else:
+#    print("你输了!!")
+# #!/usr/bin/env python3
+# import random
+# all_choice = ['石头','剪刀','布']
+# win_list = [['石头','剪刀'],['剪刀','布'],['布','石头']]
+# prompt = """(0) 石头
+# (1) 剪刀
+# (2) 布
+# 请出拳(0/1/2): """
+#
+# computer = random.choice(all_choice)
+# index = int(input(prompt))
+# player = all_choice[index]
+# print("你的出拳:",player, "计算机出拳:",computer)
+# if player == computer:
+#    print('平局')
+# elif [player,computer] in win_list:
+#    print("你赢了!!")
+# else:
+#    print("你输了!!")
+
+# #!/usr/bin/env python3
+# sum = 0
+# count = 1
+# while count <= 100:
+#    sum += count  #sum=1   sum=1+2
+#    count += 1    #count=2 count=2+1
+# print(sum)
+#!/usr/bin/env python3
+# import random
+# number = random.randint(1, 100)
+# running = True
+# while running:
+#  answer = int(input("猜数(1-100):"))
+#     if answer > number:
+#     print("猜大了")
+#  elif answer < number:
+#     print("猜小了")
+#  else:
+#     print("猜对了")
+#     running = False
+# import random
+# number = random.randint(1, 100)
+# while True:
+#  answer = int(input('猜数(1-100):'))
+#  if answer > number:
+#     print('猜大了')
+#  elif answer < number:
+#     print('猜小了')
+#  else:
+#     print('猜对了')
+#     break
+# sum=0
+# counter=0
+# while counter < 100:
+#    counter +=1
+#    if counter % 2:
+#      continue
+#    sum += counter
+# print(sum)
+# import random
+# t = 0
+# number = random.randint(1, 10)
+# while t < 3:
+#     answer = int(input('猜数(1-10)'))
+#     if answer > number:
+#        print("猜大了")
+#     elif answer < number:
+#        print("猜小了")
+#     else:
+#        print("猜对了")
+#        break
+#     t += 1
+# else:
+#     print("数字:",number)
+
+# import random
+#
+# number = random.randint(1, 100)
+# running = True
+#
+# while running:
+#     answer = int(input('猜数(1-100):'))
+#     if answer > number:
+#         print('猜大了')
+#     elif answer < number:
+#         print('猜小了')
+#     else:
+#         print('猜对了')
+#         running = False
+
+# import random
+# a = 1      #游戏次数
+# win = 0    #赢的次数
+# while a <= 3:
+#     player = int(input("请输入0剪刀1石头2布"))
+#     computer = random.randint(0,2)
+#     if player==0 or player==1 or player==2:
+#          if(player==0 and computer==2) or (player==1 and computer==0) or (player==2 and computer==1):
+#              print("第"+str(a)+"局"+"赢了")
+#              win += 1
+#          elif player == computer:
+#              print("第"+str(a)+"局"+"平局")
+#          else:
+#              print("第"+str(a)+"局"+"输了")
+#          a+=1
+#     else:
+#          print("请输入合法数字")
+#     if win >= 2:
+#        print("恭喜,你赢了")
+#     else:
+#        print("你输了")
+
+# import random
+# pc = random.randint(1,100)
+# i = 0
+# while i < 5:
+#    player = int(input("请猜数字:"))
+#    if player > pc:
+#      print("猜大了")
+#    elif player < pc:
+#      print("猜小了")
+#    else:
+#      print("猜对了")
+#      break
+#    i+=1
+# else:
+#    print("正确的数字是:",pc)
+
+#   print(lines)
+# py_str = 'python'
+# len(py_str)
+# py_str[0]
+# py_str[-1]
+# py_str[2:4]
+# py_str[2:900]
+#   print(py_str)
+# if 'tom' in words:
+#     print('yes')
+# if 'tom' not in words:
+#     print('not in')
+# else:
+#     print('tom is words')
+# lines = 'hello\nworld\njerry'
+#   print(lines)
+# py_str = 'python'
+# len(py_str)
+# py_str[0]
+# py_str[-1]
+# py_str[2:4]
+# py_str[2:900]
+#   print(py_str)
+# if 'tom' in words:
+#     print('yes')
+# if 'tom' not in words:
+#     print('not in')
+# else:
+#     print('tom is words')
+# #
+#  if -0.0:
+#    print('ok')
+#  if -0.01:
+#    print('-0.01 is ok')
+#  if ' ':
+#    print('space is true')
+#  if '':
+#    print('空字符串是False')
+#  if not [];
+#     print('空列表也是false')
+# import getpass
+# username = input('username: ')
+# password = getpass.getpass('password: ')
+# if username == 'bob' and password == '123456':
+#    print("login successful")
+# else:
+#    print("login incorrect")
+# import random
+#
+# number = random.randint(1,100)
+# print('number ->', number)
+# answer = int(input('猜数(1-100):'))
+# if answer > number:
+#    print("猜大了")
+# elif answer < number:
+#    print("猜小了")
+# else:
+#    print("猜对了")
+# a = 100
+# b = 80
+# if a < b:
+#     small = a
+# else:
+#     small = b
+# small = a if a < b else b
+#!/usr/bin/env python3
+# import getpass
+# username = input('username: ')
+# password = getpass.getpass('password: ')
+# if username == 'bob' and password == '123456':
+#     print('\033[32;1mLogin successful!\033[0m')
+# else:
+#     print('\033[31;1mLogin incorrect!\033[0m')
+# words = 'Hello\nworld\ntom\njerry'
+#  lines = '''1st line.
+#  2nd line.
+#  3rd line.'''
+#  print(words)
+#  print(lines)
+#
+# if 'tom' in words:
+#     print('yes')
+#
+# if 'tom' not in words:
+#     print('not in')
+# else:
+#     print('tom in words')
+#
+# if -0.0:
+#     print('ok')
+#
+# if -0.01:
+#     print('0.01 is ok')
+#
+# if ' ':
+#     print('space is true')
+#
+# if '':
+#     print('空字符串是False')
+#
+# if not []:
+#     print('空列表也是False')
+#
+# if not None:
+#     print('None也是False，表示空')
+
+#!/usr/bin/env python3
+#config:utf8
+# score = int(input("成绩: "))
+# if score > 60:
+#     print('及格')
+# elif score > 70:
+#     print("良")
+# elif score > 80:
+#    print("好")
+# elif score > 90:
+#    print("优秀")
+# else:
+#    print("你需要继续努力")
+
+#!/usr/bin/env python3
+#config:utf8
+# score = int(input('成绩: '))
+# if 60 <= score < 70:
+#    print("及格")
+# elif 70 <= score < 80:
+#    print("良")
+# elif 80 <= score < 90:
+#    print("优秀")
+# else:
+#   print("你要继续努力了")
+#!/usr/bin/env python3
+# import random
+# player = input("请输入石头 剪刀 布: ")
+# computer = random.choice(['石头','剪刀','布'])
+# win_list = [['石头','剪刀'],['剪刀','布'],['布','石头']]
+#
+# print("你的出拳:",player, "计算机出拳:",computer)
+# if player == computer:
+#    print('平局')
+# elif [player,computer] in win_list:
+#    print("你赢了!!")
+# else:
+#    print("你输了!!")
+# #!/usr/bin/env python3
+# import random
+# all_choice = ['石头','剪刀','布']
+# win_list = [['石头','剪刀'],['剪刀','布'],['布','石头']]
+# prompt = """(0) 石头
+# (1) 剪刀
+# (2) 布
+# 请出拳(0/1/2): """
+#
+# computer = random.choice(all_choice)
+# index = int(input(prompt))
+# player = all_choice[index]
+# print("你的出拳:",player, "计算机出拳:",computer)
+# if player == computer:
+#    print('平局')
+# elif [player,computer] in win_list:
+#    print("你赢了!!")
+# else:
+#    print("你输了!!")
+# import random
+# pc = random.randint(0,2)
+# player = int(input('请输入0剪刀 石头1 布2: '))
+# if ([pc==0,player==1],[pc==1,player==2],[pc==2,player==0]):
+#      print("你赢了")
+# elif pc==player:
+#      print("平局")
+# else:
+#      print("你输了")
+import random
+computer = random.choice(all_choice)
+all_choice = ['石头','剪刀','布']
+win_list = [['石头','剪刀'],['剪刀','布'],'布','石头']
+pro = '''(0)石头
+(1)剪刀
+(2)布
+请选择(0/1/2): '''
+int = int(input(pro))
+player = all_choice[int]
+
+print("您出了:" ,player ,"计算机出了:" ,computer)
+if computer == player:
+      print('\033[32;1m平局\033[0m')
+elif[player,computer]in win_list:
+      print('\033[31;1m你赢了\033[0m')
+else:
+      print('\033[31;1m平局\033[0m')
+
